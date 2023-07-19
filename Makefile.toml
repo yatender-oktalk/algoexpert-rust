@@ -1,0 +1,5 @@
+[tasks.build-release]
+workspace = false
+script = '''
+cargo build --release
+'''
