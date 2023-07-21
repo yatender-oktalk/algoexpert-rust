@@ -7,4 +7,4 @@ edition = "2021"
 
 [dependencies]
 linear = {path = "libs/search/linear"}
-binary = {path = "libs/search/binary"}
+# binary = {path = "libs/search/binary"}

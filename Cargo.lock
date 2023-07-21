@@ -6,13 +6,8 @@ version = 3
 name = "algoexpert-rust"
 version = "0.1.0"
 dependencies = [
- "binary",
  "linear",
 ]
-
-[[package]]
-name = "binary"
-version = "0.1.0"
 
 [[package]]
 name = "linear"
