@@ -1,7 +1,7 @@
-pub fn linear_search<T: Ord>(arr: &Vec<T>, data_to_search: &T) -> i32 {
-    for (idx, data) in arr.into_iter().enumerate() {
-        if data == data_to_search {
-            return idx as i32
+pub fn linear_search<T: Ord>(arr: &Vec<T>, target: &T) -> i32 {
+    for (i, data) in arr.iter().enumerate() {
+        if *target == *data {
+            return i as i32;
         }
     }
     return -1;
@@ -15,7 +15,7 @@ mod tests {
 
     #[test]
     fn search_num() {
-        let arr = vec![1,2,3,4,5];
+        let arr = vec![1, 2, 3, 4, 5];
         let result = linear_search(&arr, &5);
         print!("{}", result);
         assert_eq!(result, 4);
