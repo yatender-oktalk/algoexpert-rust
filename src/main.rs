@@ -1,4 +1,4 @@
-mod arrays;
+mod array;
 mod search;
 
 fn main() {

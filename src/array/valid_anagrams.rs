@@ -1,5 +1,6 @@
 use std::collections::HashMap;
 
+#[allow(dead_code)]
 fn is_anagram(first: &str, second: &str) -> bool {
     if first.len() != second.len() {
         return false

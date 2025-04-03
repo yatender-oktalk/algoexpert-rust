@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 pub fn binary_search<T: Ord>(arr: &Vec<T>, target: &T) -> i64 {
     let mut left = 0;
     let mut right = arr.len() - 1;

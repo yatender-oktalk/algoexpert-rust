@@ -1,5 +1,6 @@
 use std::collections::HashMap;
 
+#[allow(dead_code)]
 pub fn two_num_sum(arr: &Vec<i64>, target: i64) -> Vec<i64> {
     let mut nums: HashMap<i64, ()> = HashMap::new();
 
