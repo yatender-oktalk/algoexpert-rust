@@ -1,26 +1,17 @@
 use std::collections::HashMap;
 
 pub fn two_num_sum(arr: &Vec<i64>, target: i64) -> Vec<i64> {
-    let mut target_arr: Vec<i64> = Vec::new();
-    let mut num_map = HashMap::new();
+    let mut nums: HashMap<i64, ()> = HashMap::new();
 
-    for (index, &data) in arr.iter().enumerate() {
-        num_map.insert(data, index);
-    }
-
-    for (index, &data) in arr.iter().enumerate() {
-        let complement = target - data;
-        println!("{data}, {complement}");
-        if let Some(&complement_index) = num_map.get(&complement) {
-            if complement_index != index {
-                target_arr.push(data);
-                target_arr.push(complement);
-                return target_arr;
-            }
+    for &value in arr.iter() {
+        let complement = target - value;
+        if let true = nums.contains_key(&complement){
+            return vec![complement, value]
         }
+        nums.insert(value, ());
     }
 
-    return target_arr;
+    Vec::new()
 }
 
 #[cfg(test)]

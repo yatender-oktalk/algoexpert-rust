@@ -5,20 +5,3 @@ version = 4
 [[package]]
 name = "algoexpert-rust"
 version = "0.1.0"
-dependencies = [
- "binary",
- "linear",
- "two_num_sum",
-]
-
-[[package]]
-name = "binary"
-version = "0.1.0"
-
-[[package]]
-name = "linear"
-version = "0.1.0"
-
-[[package]]
-name = "two_num_sum"
-version = "0.1.0"
